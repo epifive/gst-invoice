@@ -1,6 +1,13 @@
 # EpiFive GST Invoice: free GST invoice generator with UPI QR
 
-**Make a clean GST or VAT invoice in 60 seconds. It includes a UPI QR so clients pay instantly, and exports to PDF.**
+<!-- epifive:header -->
+> Make a clean GST or VAT invoice in 60 seconds, with a UPI QR so clients pay instantly, and export it to PDF.
+
+[![Licence: MIT](https://img.shields.io/badge/licence-MIT-0a7560?style=flat-square)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/epifive/gst-invoice?style=flat-square&label=release&color=4f5bd5)](https://github.com/epifive/gst-invoice/releases/latest)
+[![GitHub stars](https://img.shields.io/github/stars/epifive/gst-invoice?style=flat-square&color=b5791b)](https://github.com/epifive/gst-invoice/stargazers)
+
+**[Docs & guide on epifive.com](https://www.epifive.com/blog/free-gst-invoice-generator-open-source?utm_source=github&utm_medium=readme&utm_campaign=gst-invoice)** · **[Live demo](https://gst-invoice-demo.pages.dev)** · **[Download the latest release](https://github.com/epifive/gst-invoice/releases/latest)** · [Pro edition](https://www.epifive.com/products/gst-invoice-pro?utm_source=github&utm_medium=readme&utm_campaign=gst-invoice)
 
 EpiFive GST Invoice is an open-source invoice, quotation and receipt maker that runs entirely in your browser. It handles Indian GST properly (GSTIN check, place of supply, CGST + SGST or IGST, HSN/SAC tax summary, amount in words in lakh/crore) and also works for VAT, sales tax or no-tax invoices in 20+ currencies. No sign-up, no server, no trackers.
 
@@ -91,6 +98,8 @@ npm run build      # static site in out/
 - **Vercel / Netlify**: import the repo; the framework preset works as is (output directory `out`).
 - **GitHub Pages, S3, Nginx, Apache or any web server**: upload the contents of `out/`.
 
+**No build tools?** Download `gst-invoice-vX.Y.Z-static.zip` from the [latest release](https://github.com/epifive/gst-invoice/releases/latest) and upload its contents to any static host. It is built with the default site URL; rebuild with `NEXT_PUBLIC_SITE_URL` set to use your own domain in canonical URLs and the sitemap.
+
 There is no backend and no database. Each user's data stays in their own browser.
 
 ## How the tax maths works
@@ -120,8 +129,12 @@ Issues and pull requests are welcome. Please run `npm test`, `npm run lint` and 
 
 MIT © 2026 EpiFive. See [LICENSE](LICENSE).
 
----
+## More from EpiFive
 
 - Get Pro: https://www.epifive.com/products/gst-invoice-pro
 - More open-source projects: https://www.epifive.com/open-source
 - Need a custom app built? https://www.epifive.com/services#custom-app-development
+
+---
+
+<p align="center">Made by <b>EpiFive</b> — <a href="https://www.epifive.com/?utm_source=github&utm_medium=readme&utm_campaign=gst-invoice">www.epifive.com</a> · <a href="https://www.epifive.com/open-source?utm_source=github&utm_medium=readme&utm_campaign=gst-invoice">more open-source projects</a></p>
